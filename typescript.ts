@@ -38,7 +38,7 @@ interface Product {
     price: number;
 }
 
-let products: Product[]; [
+let products: Product[] = [
     {
         name: 'Mustard',
         price: 2.25,
@@ -109,7 +109,7 @@ let inventory: InventoryItem[] = [
 const calcInventoryValue = (array: InventoryItem[]): number => {
     let sum = 0;
     for (const i of array) {
-        sum += i.product.price * i.quantity;
+        sum += ( i.product.price * i.quantity ); 
     }
     return sum;
 }

@@ -25,8 +25,7 @@ var findNameOfTallestMountain = function (array) {
 var tallestMtn = findNameOfTallestMountain(mountains);
 console.log('Tallest Mountain:');
 console.log(tallestMtn);
-var products;
-[
+var products = [
     {
         name: 'Mustard',
         price: 2.25
@@ -87,7 +86,7 @@ var calcInventoryValue = function (array) {
     var sum = 0;
     for (var _i = 0, array_3 = array; _i < array_3.length; _i++) {
         var i = array_3[_i];
-        sum += i.product.price * i.quantity;
+        sum += (i.product.price * i.quantity);
     }
     return sum;
 };

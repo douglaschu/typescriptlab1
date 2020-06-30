@@ -50,14 +50,17 @@ let products: Product[] = [
     {
         name: 'Mayostard',
         price: 4.25,
+        //warning: Mayonnaise will expire before mustard. 
     },
     {
         name: 'Mustardayonnaise',
         price: 4.05,
+        //warning: Mayonnaise will expire before mustard.
     },
     {
         name: 'Mustmayostardayonnaise',
         price: 5.50,
+        //warning: Mayostard will expire before Mustardayonnaise.
     },
 ]
 
